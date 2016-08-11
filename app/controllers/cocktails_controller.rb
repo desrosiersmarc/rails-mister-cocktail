@@ -4,6 +4,12 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
   end
 
+  def show
+    @cocktail = Cocktail.find(params[:id])
+    @ingredients = Ingredient.all
+    @dose = Dose.new
+  end
+
   def new
     @cocktail = Cocktail.new
   end
@@ -11,13 +17,10 @@ class CocktailsController < ApplicationController
   def create
     @cocktail = Cocktail.new(cocktail_params)
     if @cocktail.save
-      redirect_to cocktails_path
+      redirect_to cocktail_path(@cocktail)
     else
       render :new
     end
-  end
-
-  def destroy
   end
 
   private
