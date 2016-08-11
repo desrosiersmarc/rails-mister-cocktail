@@ -10,6 +10,10 @@
   </head>
 
   <body>
+  <div class="navbar-mc">
+    <%= link_to "home", cocktails_path %>
+    <%= link_to "add a new cocktail", new_cocktail_path %>
+  </div>
     <%= yield %>
   </body>
 </html>

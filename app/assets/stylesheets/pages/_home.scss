@@ -2,3 +2,10 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+.navbar-mc {
+  height: 50px;
+  background-color: #DDD;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
