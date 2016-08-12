@@ -17,8 +17,9 @@
       Mister Cocktail
       <i class="fa fa-glass" aria-hidden="true"></i>
     </p>
-    <%= link_to "add a new", new_cocktail_path %>
+    <%= link_to "add a new", new_cocktail_path, data: { turbolinks: "false" } %>
   </div>
     <%= yield %>
+  <%= cloudinary_js_config %>
   </body>
 </html>
