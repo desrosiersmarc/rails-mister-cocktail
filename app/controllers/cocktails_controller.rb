@@ -1,5 +1,5 @@
 class CocktailsController < ApplicationController
-
+  # before_action: :find_cocktail, only: [:show, :edit]
   def index
     @cocktails = Cocktail.all
   end
@@ -21,6 +21,10 @@ class CocktailsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+    # @cocktail
   end
 
   private
