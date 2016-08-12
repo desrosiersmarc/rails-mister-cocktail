@@ -7,7 +7,7 @@ gem 'figaro'
 #For pictures storage
 gem 'cloudinary', '1.1.0'
 #For pictures upload
-gem 'attachinary', '1.3.1'
+gem 'attachinary'
 #With attachinary
 gem 'jquery-fileupload-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
